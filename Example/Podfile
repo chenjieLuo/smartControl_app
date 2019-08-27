@@ -2,6 +2,10 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 platform :ios, '8.0'
 
-target 'ParticleSDK Example Pods' do
+target 'CMVision_ios_develop Pods' do
     pod 'Particle-SDK', :path => '../'
+    pod 'Firebase'
+    pod 'Firebase/Analytics'
+	pod 'Firebase/Database'
+	pod 'Firebase/Auth'
 end

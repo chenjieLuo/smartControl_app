@@ -22,14 +22,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    self.ref = [[FIRDatabase database] reference];
     [self updateButtonsState];
 }
 
 #pragma mark - SDK
 
 - (void)login {
-
+    /////////need read data and start here now
+    
     if ([PARTICLE_USER isEqualToString:@"NOT SET"] || [PARTICLE_PASSWORD isEqualToString:@"NOT SET"]) {
         NSLog(@"To log in, you must change PARTICLE_USER and PARTICLE_PASSWORD constant values in ParticleViewController.m");
         return;
@@ -58,7 +59,22 @@
     }];
 }
 
-
+- (void) signup {
+    [[[self.ref child:@"users"] child:_UserNameField.text]
+     setValue:@{@"password": _PasscodeField.text}];
+    UIAlertController * alert = [UIAlertController
+                                 alertControllerWithTitle:@"Signup Complete!"
+                                 message:@"Please log in with your password now!"
+                                 preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction* yesButton = [UIAlertAction
+                                actionWithTitle:@"Yes"
+                                style:UIAlertActionStyleDefault
+                                handler:NULL];
+    _UserNameField.text = @"";
+    _PasscodeField.text = @"";
+    [alert addAction:yesButton];
+    [self presentViewController:alert animated:YES completion:nil];
+}
 
 - (void)logout {
     [[ParticleCloud sharedInstance] logout];
@@ -78,6 +94,11 @@
         [self login];
     }
 }
+
+- (IBAction)signupButtonClicked:(UIButton *)sender {
+    [self signup];
+}
+
 
 
 #pragma mark - Helpers

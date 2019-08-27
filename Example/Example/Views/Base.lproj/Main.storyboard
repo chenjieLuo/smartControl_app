@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="MWa-vu-utL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="MWa-vu-utL">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -96,11 +96,20 @@
                                             <action selector="loginButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xBI-dQ-c9m"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J7C-EJ-PTq" userLabel="Signup Button">
+                                        <rect key="frame" x="143" y="499.5" width="57" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Signup"/>
+                                        <connections>
+                                            <action selector="signupButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jYf-bJ-uqt"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="wyU-zi-Bt0" firstAttribute="top" secondItem="qQr-64-TER" secondAttribute="bottom" constant="21.5" id="8cy-wI-JZu"/>
                                     <constraint firstItem="wyU-zi-Bt0" firstAttribute="leading" secondItem="nPB-6A-7eH" secondAttribute="leading" constant="5" id="97F-Xn-yJM"/>
+                                    <constraint firstItem="J7C-EJ-PTq" firstAttribute="height" secondItem="Fhw-Lu-kpn" secondAttribute="height" id="HAr-7q-0y0"/>
                                     <constraint firstItem="1vV-Hl-bNt" firstAttribute="centerX" secondItem="nPB-6A-7eH" secondAttribute="centerX" id="PVZ-yU-0Bm"/>
                                     <constraint firstItem="7M1-Eo-XY2" firstAttribute="leading" secondItem="nPB-6A-7eH" secondAttribute="leading" constant="16.5" id="Pby-pr-zUu"/>
                                     <constraint firstItem="69Y-M9-MSr" firstAttribute="top" secondItem="nPB-6A-7eH" secondAttribute="top" constant="20" id="Q4y-dr-fyl"/>
@@ -110,11 +119,14 @@
                                     <constraint firstItem="Fhw-Lu-kpn" firstAttribute="centerX" secondItem="nPB-6A-7eH" secondAttribute="centerX" id="Zr8-fy-L8p"/>
                                     <constraint firstItem="7M1-Eo-XY2" firstAttribute="top" secondItem="wyU-zi-Bt0" secondAttribute="bottom" constant="22" id="lEK-e9-Sto"/>
                                     <constraint firstItem="69Y-M9-MSr" firstAttribute="leading" secondItem="nPB-6A-7eH" secondAttribute="leading" constant="60" id="ljc-Ae-4yI"/>
+                                    <constraint firstItem="J7C-EJ-PTq" firstAttribute="top" secondItem="Fhw-Lu-kpn" secondAttribute="bottom" constant="5" id="oGn-eq-dJt"/>
                                     <constraint firstItem="Fhw-Lu-kpn" firstAttribute="top" secondItem="1vV-Hl-bNt" secondAttribute="bottom" constant="5" id="q5p-G2-TXQ"/>
+                                    <constraint firstItem="1vV-Hl-bNt" firstAttribute="height" secondItem="Fhw-Lu-kpn" secondAttribute="height" id="rkC-AK-Hf8"/>
                                     <constraint firstItem="qQr-64-TER" firstAttribute="leading" secondItem="nPB-6A-7eH" secondAttribute="leading" id="sWJ-eo-5CQ"/>
                                     <constraint firstItem="Gow-dL-SAs" firstAttribute="leading" secondItem="wyU-zi-Bt0" secondAttribute="trailing" constant="10" id="tME-Lr-UAG"/>
                                     <constraint firstItem="ddF-i1-I3D" firstAttribute="leading" secondItem="7M1-Eo-XY2" secondAttribute="trailing" constant="10" id="tqL-bm-cg7"/>
                                     <constraint firstAttribute="trailing" secondItem="69Y-M9-MSr" secondAttribute="trailing" constant="60" id="xlL-GE-UR0"/>
+                                    <constraint firstItem="J7C-EJ-PTq" firstAttribute="centerX" secondItem="nPB-6A-7eH" secondAttribute="centerX" id="yGT-Vk-Das"/>
                                     <constraint firstAttribute="trailing" secondItem="qQr-64-TER" secondAttribute="trailing" id="znf-W3-uSt"/>
                                     <constraint firstItem="1vV-Hl-bNt" firstAttribute="top" secondItem="ddF-i1-I3D" secondAttribute="bottom" constant="20" id="zqK-Uy-KYP"/>
                                 </constraints>
@@ -133,6 +145,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="PasscodeField" destination="ddF-i1-I3D" id="rpQ-Sx-Fll"/>
+                        <outlet property="SignupButton" destination="J7C-EJ-PTq" id="jsh-Yi-VBO"/>
                         <outlet property="UserNameField" destination="Gow-dL-SAs" id="usw-K1-33i"/>
                         <outlet property="actionsButton" destination="Fhw-Lu-kpn" id="3fd-js-rAX"/>
                         <outlet property="loginButton" destination="1vV-Hl-bNt" id="vGv-TY-qM2"/>
@@ -522,6 +535,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Logo" width="223" height="69"/>
+        <image name="Logo" width="111.5" height="34.5"/>
     </resources>
 </document>
