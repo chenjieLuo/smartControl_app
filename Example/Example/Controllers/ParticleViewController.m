@@ -12,7 +12,7 @@
 @interface ParticleViewController()
 
 @property (assign) BOOL loggedIn;
-
+@property NSString* input_password;
 @end
 
 
@@ -30,50 +30,95 @@
 
 - (void)login {
     /////////need read data and start here now
-    
-    if ([PARTICLE_USER isEqualToString:@"NOT SET"] || [PARTICLE_PASSWORD isEqualToString:@"NOT SET"]) {
-        NSLog(@"To log in, you must change PARTICLE_USER and PARTICLE_PASSWORD constant values in ParticleViewController.m");
-        return;
-    }
 
-    self.loginButton.enabled = NO;
+    [[self.ref child:@"users"] observeEventType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot * _Nonnull snapshot) {
+        
+        NSDictionary *usersDict = snapshot.value;
+        
+        _input_password = usersDict[_UserNameField.text][@"password"];
 
-    __weak ParticleViewController *wSelf = self;
-    [[ParticleCloud sharedInstance] loginWithUser:PARTICLE_USER password:PARTICLE_PASSWORD completion:^(NSError *error) {
-        __strong ParticleViewController *sSelf = wSelf;
-
-        if (!error) {
-            //Success
-            NSLog(@"Successfully logged in to the cloud!\nAccess Token: %@", [ParticleCloud sharedInstance].accessToken);
-
-            //Update UI state
-            sSelf.loggedIn = YES;
-            [sSelf updateButtonsState];
-        } else {
-            //Failed to log in
-            NSLog(@"Error while logging in to the cloud: %@", error.localizedDescription);
-
-            sSelf.loggedIn = NO;
-            [sSelf updateButtonsState];
+        if (_input_password == _PasscodeField.text){
+            _UserNameField.text = @"";
+            _PasscodeField.text = @"";
+            self.loginButton.enabled = NO;
+            
+            __weak ParticleViewController *wSelf = self;
+            [[ParticleCloud sharedInstance] loginWithUser:PARTICLE_USER password:PARTICLE_PASSWORD completion:^(NSError *error) {
+                __strong ParticleViewController *sSelf = wSelf;
+                
+                if (!error) {
+                    //Success
+                    NSLog(@"Successfully logged in to the cloud!\nAccess Token: %@", [ParticleCloud sharedInstance].accessToken);
+                    
+                    //Update UI state
+                    sSelf.loggedIn = YES;
+                    [sSelf updateButtonsState];
+                } else {
+                    //Failed to log in
+                    NSLog(@"Error while logging in to the cloud: %@", error.localizedDescription);
+                    
+                    sSelf.loggedIn = NO;
+                    [sSelf updateButtonsState];
+                }
+            }];
         }
+        else{
+            UIAlertController * alert = [UIAlertController
+                                         alertControllerWithTitle:@"Error!"
+                                         message:@"Your username is not found or your pasworrd is incorrect, please try again"
+                                         preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction* yesButton = [UIAlertAction
+                                        actionWithTitle:@"Yes"
+                                        style:UIAlertActionStyleDefault
+                                        handler:NULL];
+            _UserNameField.text = @"";
+            _PasscodeField.text = @"";
+            [alert addAction:yesButton];
+            [self presentViewController:alert animated:YES completion:nil];
+        }
+        
+        NSLog(@"The Info: %@", _input_password);
+        NSLog(@"the password: %@", _PasscodeField.text);
     }];
 }
 
 - (void) signup {
-    [[[self.ref child:@"users"] child:_UserNameField.text]
-     setValue:@{@"password": _PasscodeField.text}];
-    UIAlertController * alert = [UIAlertController
-                                 alertControllerWithTitle:@"Signup Complete!"
-                                 message:@"Please log in with your password now!"
-                                 preferredStyle:UIAlertControllerStyleAlert];
-    UIAlertAction* yesButton = [UIAlertAction
-                                actionWithTitle:@"Yes"
-                                style:UIAlertActionStyleDefault
-                                handler:NULL];
-    _UserNameField.text = @"";
-    _PasscodeField.text = @"";
-    [alert addAction:yesButton];
-    [self presentViewController:alert animated:YES completion:nil];
+    [[self.ref child:@"users"] observeEventType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot * _Nonnull snapshot) {
+        
+        NSDictionary *usersDict = snapshot.value;
+        
+        if (usersDict[_UserNameField.text] != NULL){
+            UIAlertController * alert = [UIAlertController
+                                         alertControllerWithTitle:@"Signup Incomplete!"
+                                         message:@"The user name has been used. Please try another name."
+                                         preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction* yesButton = [UIAlertAction
+                                        actionWithTitle:@"Yes"
+                                        style:UIAlertActionStyleDefault
+                                        handler:NULL];
+            _UserNameField.text = @"";
+            _PasscodeField.text = @"";
+            [alert addAction:yesButton];
+            [self presentViewController:alert animated:YES completion:nil];
+            return;
+        }
+        else{
+            [[[self.ref child:@"users"] child:_UserNameField.text]
+             setValue:@{@"password": _PasscodeField.text}];
+            UIAlertController * alert = [UIAlertController
+                                         alertControllerWithTitle:@"Signup Complete!"
+                                         message:@"Please log in with your password now!"
+                                         preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction* yesButton = [UIAlertAction
+                                        actionWithTitle:@"Yes"
+                                        style:UIAlertActionStyleDefault
+                                        handler:NULL];
+            _UserNameField.text = @"";
+            _PasscodeField.text = @"";
+            [alert addAction:yesButton];
+            [self presentViewController:alert animated:YES completion:nil];
+        }
+    }];
 }
 
 - (void)logout {

@@ -47,6 +47,7 @@
 		93944DAA210BB45A00C2DC16 /* ParticleSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParticleSDK.framework; path = Carthage/Build/iOS/ParticleSDK.framework; sourceTree = "<group>"; };
 		93944DAE210BB70D00C2DC16 /* ExampleCarthageInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ExampleCarthageInfo.plist; sourceTree = "<group>"; };
 		B119A9FB2314C969008F3A52 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/ChromeDownload/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B119A9FE23179187008F3A52 /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		C6E9DC1E065B456CDF043F7A /* Pods-CMVision_ios_develop Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CMVision_ios_develop Pods.release.xcconfig"; path = "Pods/Target Support Files/Pods-CMVision_ios_develop Pods/Pods-CMVision_ios_develop Pods.release.xcconfig"; sourceTree = "<group>"; };
 		C810B6203E7826155B216B3D /* ActionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionsViewController.h; sourceTree = "<group>"; };
 		C810BAB894C738A615909558 /* ActionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionsViewController.m; sourceTree = "<group>"; };
@@ -156,6 +157,7 @@
 				930FC2B320EAB07000206146 /* ParticleViewController.m */,
 				C810BAB894C738A615909558 /* ActionsViewController.m */,
 				C810B6203E7826155B216B3D /* ActionsViewController.h */,
+				B119A9FE23179187008F3A52 /* User.h */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
