@@ -117,7 +117,8 @@
 				930FC2AF20EAB07000206146 /* AppDelegate.h */,
 				930FC2B020EAB07000206146 /* AppDelegate.m */,
 			);
-			path = Example;
+			name = Example;
+			path = "Support Files";
 			sourceTree = "<group>";
 		};
 		930FC2C520EAB09F00206146 /* Frameworks */ = {
@@ -464,7 +465,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4W8S55PLAW;
-				INFOPLIST_FILE = "$(SRCROOT)/Example/Supporting Files/ExamplePodsInfo.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Support Files/Supporting Files/ExamplePodsInfo.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.particle.CMVision;
@@ -486,7 +487,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4W8S55PLAW;
-				INFOPLIST_FILE = "$(SRCROOT)/Example/Supporting Files/ExamplePodsInfo.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Support Files/Supporting Files/ExamplePodsInfo.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.particle.CMVision;
