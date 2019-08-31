@@ -8,49 +8,53 @@
 
 /* Begin PBXBuildFile section */
 		5676092DD17D32C6F008A76E /* libPods-CMVision_ios_develop Pods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB41A5F6631F057840962A91 /* libPods-CMVision_ios_develop Pods.a */; };
-		930FC2B120EAB07000206146 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 930FC2B020EAB07000206146 /* AppDelegate.m */; };
-		930FC2B420EAB07000206146 /* ParticleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 930FC2B320EAB07000206146 /* ParticleViewController.m */; };
-		930FC2B720EAB07000206146 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 930FC2B520EAB07000206146 /* Main.storyboard */; };
-		930FC2B920EAB07100206146 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 930FC2B820EAB07100206146 /* Assets.xcassets */; };
-		930FC2BC20EAB07100206146 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 930FC2BA20EAB07100206146 /* LaunchScreen.storyboard */; };
-		930FC2BF20EAB07100206146 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 930FC2BE20EAB07100206146 /* main.m */; };
-		93944D9B210BB44500C2DC16 /* ParticleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 930FC2B320EAB07000206146 /* ParticleViewController.m */; };
-		93944D9C210BB44500C2DC16 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 930FC2BE20EAB07100206146 /* main.m */; };
-		93944D9D210BB44500C2DC16 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 930FC2B020EAB07000206146 /* AppDelegate.m */; };
-		93944D9E210BB44500C2DC16 /* ActionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C810BAB894C738A615909558 /* ActionsViewController.m */; };
-		93944DA1210BB44500C2DC16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 930FC2BA20EAB07100206146 /* LaunchScreen.storyboard */; };
-		93944DA2210BB44500C2DC16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 930FC2B820EAB07100206146 /* Assets.xcassets */; };
-		93944DA3210BB44500C2DC16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 930FC2B520EAB07000206146 /* Main.storyboard */; };
 		93944DAB210BB45A00C2DC16 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93944DA9210BB45A00C2DC16 /* AFNetworking.framework */; };
 		93944DAC210BB45A00C2DC16 /* ParticleSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93944DAA210BB45A00C2DC16 /* ParticleSDK.framework */; };
 		B119A9FC2314C969008F3A52 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B119A9FB2314C969008F3A52 /* GoogleService-Info.plist */; };
 		B119A9FD2314C969008F3A52 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B119A9FB2314C969008F3A52 /* GoogleService-Info.plist */; };
-		C810B3FF95A583B97734DFB7 /* ActionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C810BAB894C738A615909558 /* ActionsViewController.m */; };
+		B1DC2823231A158B0051C532 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1DC2812231A158B0051C532 /* Assets.xcassets */; };
+		B1DC2824231A158B0051C532 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1DC2812231A158B0051C532 /* Assets.xcassets */; };
+		B1DC2825231A158B0051C532 /* ExamplePodsInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = B1DC2814231A158B0051C532 /* ExamplePodsInfo.plist */; };
+		B1DC2826231A158B0051C532 /* ExamplePodsInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = B1DC2814231A158B0051C532 /* ExamplePodsInfo.plist */; };
+		B1DC2827231A158B0051C532 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1DC2815231A158B0051C532 /* LaunchScreen.storyboard */; };
+		B1DC2828231A158B0051C532 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1DC2815231A158B0051C532 /* LaunchScreen.storyboard */; };
+		B1DC2829231A158B0051C532 /* ExampleCarthageInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = B1DC2817231A158B0051C532 /* ExampleCarthageInfo.plist */; };
+		B1DC282A231A158B0051C532 /* ExampleCarthageInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = B1DC2817231A158B0051C532 /* ExampleCarthageInfo.plist */; };
+		B1DC282B231A158B0051C532 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B1DC2818231A158B0051C532 /* main.m */; };
+		B1DC282C231A158B0051C532 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B1DC2818231A158B0051C532 /* main.m */; };
+		B1DC282D231A158B0051C532 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B1DC2819231A158B0051C532 /* AppDelegate.m */; };
+		B1DC282E231A158B0051C532 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B1DC2819231A158B0051C532 /* AppDelegate.m */; };
+		B1DC282F231A158B0051C532 /* ActionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1DC281B231A158B0051C532 /* ActionsViewController.m */; };
+		B1DC2830231A158B0051C532 /* ActionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1DC281B231A158B0051C532 /* ActionsViewController.m */; };
+		B1DC2831231A158B0051C532 /* ParticleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1DC281F231A158B0051C532 /* ParticleViewController.m */; };
+		B1DC2832231A158B0051C532 /* ParticleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1DC281F231A158B0051C532 /* ParticleViewController.m */; };
+		B1DC2833231A158B0051C532 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1DC2821231A158B0051C532 /* Main.storyboard */; };
+		B1DC2834231A158B0051C532 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1DC2821231A158B0051C532 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0468487C78D7F6B9DC635568 /* Pods-CMVision_ios_develop Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CMVision_ios_develop Pods.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CMVision_ios_develop Pods/Pods-CMVision_ios_develop Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		0EF09523F65C1886F38C702B /* Pods-ParticleSDK Example Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParticleSDK Example Pods.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParticleSDK Example Pods/Pods-ParticleSDK Example Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		930FC2AC20EAB07000206146 /* CMVision_ios_develop Pods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CMVision_ios_develop Pods.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		930FC2AF20EAB07000206146 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		930FC2B020EAB07000206146 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		930FC2B220EAB07000206146 /* ParticleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParticleViewController.h; sourceTree = "<group>"; };
-		930FC2B320EAB07000206146 /* ParticleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParticleViewController.m; sourceTree = "<group>"; };
-		930FC2B620EAB07000206146 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		930FC2B820EAB07100206146 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		930FC2BB20EAB07100206146 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		930FC2BD20EAB07100206146 /* ExamplePodsInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ExamplePodsInfo.plist; sourceTree = "<group>"; };
-		930FC2BE20EAB07100206146 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		930FC2CA20EAB1E900206146 /* ParticleSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ParticleSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93944DA7210BB44500C2DC16 /* CMVision_ios_develop Carthage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CMVision_ios_develop Carthage.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93944DA9210BB45A00C2DC16 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = Carthage/Build/iOS/AFNetworking.framework; sourceTree = "<group>"; };
 		93944DAA210BB45A00C2DC16 /* ParticleSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParticleSDK.framework; path = Carthage/Build/iOS/ParticleSDK.framework; sourceTree = "<group>"; };
-		93944DAE210BB70D00C2DC16 /* ExampleCarthageInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ExampleCarthageInfo.plist; sourceTree = "<group>"; };
 		B119A9FB2314C969008F3A52 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/ChromeDownload/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		B119A9FE23179187008F3A52 /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		B1DC2811231A158B0051C532 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B1DC2812231A158B0051C532 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B1DC2814231A158B0051C532 /* ExamplePodsInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ExamplePodsInfo.plist; sourceTree = "<group>"; };
+		B1DC2816231A158B0051C532 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B1DC2817231A158B0051C532 /* ExampleCarthageInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ExampleCarthageInfo.plist; sourceTree = "<group>"; };
+		B1DC2818231A158B0051C532 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B1DC2819231A158B0051C532 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B1DC281B231A158B0051C532 /* ActionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionsViewController.m; sourceTree = "<group>"; };
+		B1DC281C231A158B0051C532 /* ParticleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParticleViewController.h; sourceTree = "<group>"; };
+		B1DC281D231A158B0051C532 /* ActionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionsViewController.h; sourceTree = "<group>"; };
+		B1DC281E231A158B0051C532 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		B1DC281F231A158B0051C532 /* ParticleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParticleViewController.m; sourceTree = "<group>"; };
+		B1DC2822231A158B0051C532 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C6E9DC1E065B456CDF043F7A /* Pods-CMVision_ios_develop Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CMVision_ios_develop Pods.release.xcconfig"; path = "Pods/Target Support Files/Pods-CMVision_ios_develop Pods/Pods-CMVision_ios_develop Pods.release.xcconfig"; sourceTree = "<group>"; };
-		C810B6203E7826155B216B3D /* ActionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionsViewController.h; sourceTree = "<group>"; };
-		C810BAB894C738A615909558 /* ActionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionsViewController.m; sourceTree = "<group>"; };
 		CB41A5F6631F057840962A91 /* libPods-CMVision_ios_develop Pods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CMVision_ios_develop Pods.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E586B96CDB7F299853CE99B1 /* Pods-ParticleSDK Example Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParticleSDK Example Pods.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParticleSDK Example Pods/Pods-ParticleSDK Example Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,7 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				B119A9FB2314C969008F3A52 /* GoogleService-Info.plist */,
-				930FC2AE20EAB07000206146 /* Example */,
+				B1DC2810231A158B0051C532 /* Support Files */,
 				930FC2AD20EAB07000206146 /* Products */,
 				930FC2C520EAB09F00206146 /* Frameworks */,
 				70EAFD91F5CEE8334AD25584 /* Pods */,
@@ -107,20 +111,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		930FC2AE20EAB07000206146 /* Example */ = {
-			isa = PBXGroup;
-			children = (
-				930FC2B820EAB07100206146 /* Assets.xcassets */,
-				930FC2CE20EAB38000206146 /* Controllers */,
-				930FC2CC20EAB32500206146 /* Supporting Files */,
-				930FC2CD20EAB36B00206146 /* Views */,
-				930FC2AF20EAB07000206146 /* AppDelegate.h */,
-				930FC2B020EAB07000206146 /* AppDelegate.m */,
-			);
-			name = Example;
-			path = "Support Files";
-			sourceTree = "<group>";
-		};
 		930FC2C520EAB09F00206146 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,35 +122,48 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		930FC2CC20EAB32500206146 /* Supporting Files */ = {
+		B1DC2810231A158B0051C532 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				93944DAE210BB70D00C2DC16 /* ExampleCarthageInfo.plist */,
-				930FC2BA20EAB07100206146 /* LaunchScreen.storyboard */,
-				930FC2BD20EAB07100206146 /* ExamplePodsInfo.plist */,
-				930FC2BE20EAB07100206146 /* main.m */,
+				B1DC2811231A158B0051C532 /* AppDelegate.h */,
+				B1DC2812231A158B0051C532 /* Assets.xcassets */,
+				B1DC2813231A158B0051C532 /* Supporting Files */,
+				B1DC2819231A158B0051C532 /* AppDelegate.m */,
+				B1DC281A231A158B0051C532 /* Controllers */,
+				B1DC2820231A158B0051C532 /* Views */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		B1DC2813231A158B0051C532 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B1DC2814231A158B0051C532 /* ExamplePodsInfo.plist */,
+				B1DC2815231A158B0051C532 /* LaunchScreen.storyboard */,
+				B1DC2817231A158B0051C532 /* ExampleCarthageInfo.plist */,
+				B1DC2818231A158B0051C532 /* main.m */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		930FC2CD20EAB36B00206146 /* Views */ = {
+		B1DC281A231A158B0051C532 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				930FC2B520EAB07000206146 /* Main.storyboard */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		930FC2CE20EAB38000206146 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				930FC2B220EAB07000206146 /* ParticleViewController.h */,
-				930FC2B320EAB07000206146 /* ParticleViewController.m */,
-				C810BAB894C738A615909558 /* ActionsViewController.m */,
-				C810B6203E7826155B216B3D /* ActionsViewController.h */,
-				B119A9FE23179187008F3A52 /* User.h */,
+				B1DC281B231A158B0051C532 /* ActionsViewController.m */,
+				B1DC281C231A158B0051C532 /* ParticleViewController.h */,
+				B1DC281D231A158B0051C532 /* ActionsViewController.h */,
+				B1DC281E231A158B0051C532 /* User.h */,
+				B1DC281F231A158B0051C532 /* ParticleViewController.m */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B1DC2820231A158B0051C532 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B1DC2821231A158B0051C532 /* Main.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,10 +248,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				930FC2BC20EAB07100206146 /* LaunchScreen.storyboard in Resources */,
+				B1DC2829231A158B0051C532 /* ExampleCarthageInfo.plist in Resources */,
+				B1DC2825231A158B0051C532 /* ExamplePodsInfo.plist in Resources */,
+				B1DC2827231A158B0051C532 /* LaunchScreen.storyboard in Resources */,
+				B1DC2833231A158B0051C532 /* Main.storyboard in Resources */,
+				B1DC2823231A158B0051C532 /* Assets.xcassets in Resources */,
 				B119A9FC2314C969008F3A52 /* GoogleService-Info.plist in Resources */,
-				930FC2B920EAB07100206146 /* Assets.xcassets in Resources */,
-				930FC2B720EAB07000206146 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,10 +261,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93944DA1210BB44500C2DC16 /* LaunchScreen.storyboard in Resources */,
+				B1DC282A231A158B0051C532 /* ExampleCarthageInfo.plist in Resources */,
+				B1DC2826231A158B0051C532 /* ExamplePodsInfo.plist in Resources */,
+				B1DC2828231A158B0051C532 /* LaunchScreen.storyboard in Resources */,
+				B1DC2834231A158B0051C532 /* Main.storyboard in Resources */,
+				B1DC2824231A158B0051C532 /* Assets.xcassets in Resources */,
 				B119A9FD2314C969008F3A52 /* GoogleService-Info.plist in Resources */,
-				93944DA2210BB44500C2DC16 /* Assets.xcassets in Resources */,
-				93944DA3210BB44500C2DC16 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,10 +313,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				930FC2B420EAB07000206146 /* ParticleViewController.m in Sources */,
-				930FC2BF20EAB07100206146 /* main.m in Sources */,
-				930FC2B120EAB07000206146 /* AppDelegate.m in Sources */,
-				C810B3FF95A583B97734DFB7 /* ActionsViewController.m in Sources */,
+				B1DC282D231A158B0051C532 /* AppDelegate.m in Sources */,
+				B1DC282B231A158B0051C532 /* main.m in Sources */,
+				B1DC2831231A158B0051C532 /* ParticleViewController.m in Sources */,
+				B1DC282F231A158B0051C532 /* ActionsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,30 +324,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93944D9B210BB44500C2DC16 /* ParticleViewController.m in Sources */,
-				93944D9C210BB44500C2DC16 /* main.m in Sources */,
-				93944D9D210BB44500C2DC16 /* AppDelegate.m in Sources */,
-				93944D9E210BB44500C2DC16 /* ActionsViewController.m in Sources */,
+				B1DC282E231A158B0051C532 /* AppDelegate.m in Sources */,
+				B1DC282C231A158B0051C532 /* main.m in Sources */,
+				B1DC2832231A158B0051C532 /* ParticleViewController.m in Sources */,
+				B1DC2830231A158B0051C532 /* ActionsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		930FC2B520EAB07000206146 /* Main.storyboard */ = {
+		B1DC2815231A158B0051C532 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				930FC2B620EAB07000206146 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		930FC2BA20EAB07100206146 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				930FC2BB20EAB07100206146 /* Base */,
+				B1DC2816231A158B0051C532 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B1DC2821231A158B0051C532 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1DC2822231A158B0051C532 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
