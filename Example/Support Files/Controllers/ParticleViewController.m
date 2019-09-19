@@ -30,16 +30,15 @@
 
 - (void)login {
     /////////need read data and start here now
-
+    _usernameinput = _UserNameField.text;
+    _userpasswordinput = _PasscodeField.text;
     [[self.ref child:@"users"] observeEventType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot * _Nonnull snapshot) {
         
         NSDictionary *usersDict = snapshot.value;
         
-        _input_password = usersDict[_UserNameField.text][@"password"];
+        self->_input_password = usersDict[self->_usernameinput][@"password"];
 
-        if (_input_password == _PasscodeField.text){
-            _UserNameField.text = @"";
-            _PasscodeField.text = @"";
+        if (self->_input_password == self->_userpasswordinput){
             self.loginButton.enabled = NO;
             
             __weak ParticleViewController *wSelf = self;
@@ -71,23 +70,24 @@
                                         actionWithTitle:@"Yes"
                                         style:UIAlertActionStyleDefault
                                         handler:NULL];
-            _UserNameField.text = @"";
-            _PasscodeField.text = @"";
             [alert addAction:yesButton];
             [self presentViewController:alert animated:YES completion:nil];
         }
         
-        NSLog(@"The Info: %@", _input_password);
-        NSLog(@"the password: %@", _PasscodeField.text);
+        //NSLog(@"The Info: %@", _input_password);
+        //NSLog(@"the password: %@",_userpasswordinput);
     }];
 }
 
 - (void) signup {
+    _usernameinput = _UserNameField.text;
+    _userpasswordinput = _PasscodeField.text;
+    
     [[self.ref child:@"users"] observeEventType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot * _Nonnull snapshot) {
         
         NSDictionary *usersDict = snapshot.value;
         
-        if (usersDict[_UserNameField.text] != NULL){
+        if (usersDict[_usernameinput] != NULL){
             UIAlertController * alert = [UIAlertController
                                          alertControllerWithTitle:@"Signup Incomplete!"
                                          message:@"The user name has been used. Please try another name."
@@ -96,15 +96,14 @@
                                         actionWithTitle:@"Yes"
                                         style:UIAlertActionStyleDefault
                                         handler:NULL];
-            _UserNameField.text = @"";
-            _PasscodeField.text = @"";
+            
             [alert addAction:yesButton];
             [self presentViewController:alert animated:YES completion:nil];
             return;
         }
         else{
-            [[[self.ref child:@"users"] child:_UserNameField.text]
-             setValue:@{@"password": _PasscodeField.text}];
+            [[[self.ref child:@"users"] child:_usernameinput]
+             setValue:@{@"password": _userpasswordinput}];
             UIAlertController * alert = [UIAlertController
                                          alertControllerWithTitle:@"Signup Complete!"
                                          message:@"Please log in with your password now!"
@@ -113,8 +112,8 @@
                                         actionWithTitle:@"Yes"
                                         style:UIAlertActionStyleDefault
                                         handler:NULL];
-            _UserNameField.text = @"";
-            _PasscodeField.text = @"";
+            //_UserNameField.text = @"";
+            //_PasscodeField.text = @"";
             [alert addAction:yesButton];
             [self presentViewController:alert animated:YES completion:nil];
         }
@@ -137,11 +136,15 @@
         [self logout];
     } else {
         [self login];
+        _UserNameField.text = @"";
+        _PasscodeField.text = @"";
     }
 }
 
 - (IBAction)signupButtonClicked:(UIButton *)sender {
     [self signup];
+    _UserNameField.text = @"";
+    _PasscodeField.text = @"";
 }
 
 

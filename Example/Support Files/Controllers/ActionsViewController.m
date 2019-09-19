@@ -312,42 +312,42 @@
 //}
 
 -(NSString *) checkDeviceID{
-//        NSString * url = [NSString stringWithFormat:@"http://192.168.0.1/device-id"];
-//        NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
-//        [request setHTTPMethod:@"GET"];
-//        [request setURL:[NSURL URLWithString:url]];
-//
-//        NSError *error = nil;
-//        NSHTTPURLResponse *responseCode = nil;
-//
-//        NSData *oResponseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&responseCode error:&error];
-//
-//        if([responseCode statusCode] != 200){
-//            NSString *errorstr = [NSString stringWithFormat:@"Error getting device ID"];
-//            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error message" message:errorstr delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
-//            [alert show];
-//            return nil;
-//        }
-//        else{
-//        NSString *output = [[NSString alloc] initWithData:oResponseData encoding:NSUTF8StringEncoding];
-//            output = [output substringWithRange:NSMakeRange(7, 24)];
-//            NSLog(output);
-////            for (int i = 0; i < output.length;i++){
-////                if(!(48<=(int)[output substringWithRange:NSMakeRange(i,i+1)] && (int)[output substringWithRange:NSMakeRange(i,i+1)] <=57)){
-////                    NSString *errorstr = [NSString stringWithFormat:@"Error getting device ID. Please connect to WLAN network named Photon and try again. "];
-////                    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error message" message:errorstr delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
-////                    [alert show];
-////                    return output;
-////                }
-////            }
-//            NSString *astr = [NSString stringWithFormat:@"Your device ID has been obtained! You can start controlling the device now! "];
-//            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Your device ID has been obtained!" message:astr delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
-//            [alert show];
-//            return output;
-//        }
-    NSString *output = @"3d003e000747363339343638";
-    NSLog(@"Succeed");
-    return output;
+        NSString * url = [NSString stringWithFormat:@"http://192.168.0.1/device-id"];
+        NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
+        [request setHTTPMethod:@"GET"];
+        [request setURL:[NSURL URLWithString:url]];
+
+        NSError *error = nil;
+        NSHTTPURLResponse *responseCode = nil;
+
+        NSData *oResponseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&responseCode error:&error];
+
+        if([responseCode statusCode] != 200){
+            NSString *errorstr = [NSString stringWithFormat:@"Error getting device ID"];
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error message" message:errorstr delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+            [alert show];
+            return nil;
+        }
+        else{
+        NSString *output = [[NSString alloc] initWithData:oResponseData encoding:NSUTF8StringEncoding];
+            output = [output substringWithRange:NSMakeRange(7, 24)];
+            NSLog(output);
+//            for (int i = 0; i < output.length;i++){
+//                if(!(48<=(int)[output substringWithRange:NSMakeRange(i,i+1)] && (int)[output substringWithRange:NSMakeRange(i,i+1)] <=57)){
+//                    NSString *errorstr = [NSString stringWithFormat:@"Error getting device ID. Please connect to WLAN network named Photon and try again. "];
+//                    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error message" message:errorstr delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+//                    [alert show];
+//                    return output;
+//                }
+//            }
+            NSString *astr = [NSString stringWithFormat:@"Your device ID has been obtained! You can start controlling the device now! "];
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Your device ID has been obtained!" message:astr delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+            [alert show];
+            return output;
+        }
+//    NSString *output = @"3d003e000747363339343638";
+//    NSLog(@"Succeed");
+//    return output;
 }
 
 

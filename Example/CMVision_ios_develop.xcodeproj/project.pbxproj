@@ -10,8 +10,8 @@
 		5676092DD17D32C6F008A76E /* libPods-CMVision_ios_develop Pods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB41A5F6631F057840962A91 /* libPods-CMVision_ios_develop Pods.a */; };
 		93944DAB210BB45A00C2DC16 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93944DA9210BB45A00C2DC16 /* AFNetworking.framework */; };
 		93944DAC210BB45A00C2DC16 /* ParticleSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93944DAA210BB45A00C2DC16 /* ParticleSDK.framework */; };
-		B119A9FC2314C969008F3A52 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B119A9FB2314C969008F3A52 /* GoogleService-Info.plist */; };
-		B119A9FD2314C969008F3A52 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B119A9FB2314C969008F3A52 /* GoogleService-Info.plist */; };
+		B186922A2331807D0066E80E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B18692292331807D0066E80E /* GoogleService-Info.plist */; };
+		B186922B2331807D0066E80E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B18692292331807D0066E80E /* GoogleService-Info.plist */; };
 		B1DC2823231A158B0051C532 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1DC2812231A158B0051C532 /* Assets.xcassets */; };
 		B1DC2824231A158B0051C532 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1DC2812231A158B0051C532 /* Assets.xcassets */; };
 		B1DC2825231A158B0051C532 /* ExamplePodsInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = B1DC2814231A158B0051C532 /* ExamplePodsInfo.plist */; };
@@ -40,7 +40,7 @@
 		93944DA7210BB44500C2DC16 /* CMVision_ios_develop Carthage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CMVision_ios_develop Carthage.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93944DA9210BB45A00C2DC16 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = Carthage/Build/iOS/AFNetworking.framework; sourceTree = "<group>"; };
 		93944DAA210BB45A00C2DC16 /* ParticleSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParticleSDK.framework; path = Carthage/Build/iOS/ParticleSDK.framework; sourceTree = "<group>"; };
-		B119A9FB2314C969008F3A52 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/ChromeDownload/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B18692292331807D0066E80E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Support Files/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B1DC2811231A158B0051C532 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B1DC2812231A158B0051C532 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1DC2814231A158B0051C532 /* ExamplePodsInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ExamplePodsInfo.plist; sourceTree = "<group>"; };
@@ -94,7 +94,7 @@
 		930FC2A320EAB07000206146 = {
 			isa = PBXGroup;
 			children = (
-				B119A9FB2314C969008F3A52 /* GoogleService-Info.plist */,
+				B18692292331807D0066E80E /* GoogleService-Info.plist */,
 				B1DC2810231A158B0051C532 /* Support Files */,
 				930FC2AD20EAB07000206146 /* Products */,
 				930FC2C520EAB09F00206146 /* Frameworks */,
@@ -253,7 +253,7 @@
 				B1DC2827231A158B0051C532 /* LaunchScreen.storyboard in Resources */,
 				B1DC2833231A158B0051C532 /* Main.storyboard in Resources */,
 				B1DC2823231A158B0051C532 /* Assets.xcassets in Resources */,
-				B119A9FC2314C969008F3A52 /* GoogleService-Info.plist in Resources */,
+				B186922A2331807D0066E80E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +266,7 @@
 				B1DC2828231A158B0051C532 /* LaunchScreen.storyboard in Resources */,
 				B1DC2834231A158B0051C532 /* Main.storyboard in Resources */,
 				B1DC2824231A158B0051C532 /* Assets.xcassets in Resources */,
-				B119A9FD2314C969008F3A52 /* GoogleService-Info.plist in Resources */,
+				B186922B2331807D0066E80E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

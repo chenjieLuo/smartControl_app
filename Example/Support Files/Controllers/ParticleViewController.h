@@ -11,4 +11,7 @@
 @property (strong, nonatomic) FIRDatabaseReference *ref;
 @property (weak, nonatomic) IBOutlet UIButton *SignupButton;
 
+@property NSString * usernameinput;
+@property NSString * userpasswordinput;
+
 @end
